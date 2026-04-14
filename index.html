@@ -1,0 +1,99 @@
+<html style="background-color: var(--secondary-color);">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+  <title>Vinzenz Krüger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="functions.js" defer></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Uloopet+Guides&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7fbf6355c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body onscroll="id_check()" id="body" style="display: grid; ">
+    <header>
+        <h1>Vinzenz Krüger</h1>
+        <div id="seite" class="sections">
+            <button onclick="to_id()" class="menu on" style="font-size: 5vh;">
+                <i class="fa-solid fa-house"></i>
+            </button>
+            <button onclick="to_id()" class="menu" style="font-size: 5vh;">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button onclick="to_id()" class="menu" style="font-size: 5vh;">
+                <i class="fa-solid fa-trophy"></i>
+            </button>
+            <button onclick="to_id()" class="menu" style="font-size: 5vh;">
+                <i class="fa-solid fa-share"></i>
+            </button>
+            <button onclick="to_id()" class="menu" style="font-size: 5vh;">
+                <i class="fa-solid fa-address-book"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="seite" style="display: flex; align-items: center; justify-content: space-evenly; height: 90vh;">
+        <video class="video" height="90%" autoplay muted controls>
+            <source src="2025.mp4" type="video/mp4">
+        </video>
+        <p style="width: 35%; text-align: center; font-size: 4.5vw; font-family: playwrite-dk-uloopet-guides-regular;">"<i>Servus</i>, ich heiße Vinzenz Krüger und bin <i>Downhill</i> <b>Racer</b>."</p>
+    </div>
+
+    <div class="seite" style="display: flex; align-items: center; justify-content: space-evenly; height: 100vh;">
+        <img style="width: 40%;" src="Bellwald 1.jpg"></img>
+        <div style="width: auto; align-items: start; display: grid; background-color: transparent;">
+            <p style="font-size: 5.5vw; margin: 0; color: var(--secondary-color);">Ich bin…</p>
+            <ul>
+                <li>16 Jahre alt</li>
+                <li><i class="fa-solid fa-bicycle"></i> & <i class="fa-solid fa-computer"></i> Nerd</li>
+                <li>und liebe Downhill</li>
+            </ul>
+            <p style="font-size: 4vw; margin: 0; margin-left: 25;">… und liebe DH fahren</p>
+        </div>
+    </div>
+
+    <div class="seite" style="display: grid; grid-template-columns: 42% 42%; position: relative; height: 100vh; align-items: center; justify-content: space-evenly;">
+        <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Stage\ dive.jpg);">
+            <h2 class="year" style="position: absolute; top: 10px; margin: 0;">2025
+                <i class="fa-regular fa-calendar"></i>
+            </h2>
+            <p class="text hidden" style="position: absolute; top: 10px; margin: 0;">IXS Downhill Cup: 2. Platz Gesamtwertung</p>
+        </button>
+        <button class="flip_chart" style="position: relative; background-image: url(Ilmenau\ Jump\ 2.jpg);">
+            <h2  class="year" style="position: absolute; top: 10px; margin: 0;">2024
+                <i class="fa-regular fa-calendar"></i>
+            </h2>
+            <p class="text hidden" style="position: absolute; top: 5px; margin: 0;">a</p>
+
+        </button>
+    </div>
+
+    <div class="seite" style="display: flex; justify-content: space-evenly; align-items: center; height: 100vh;">
+        <video class="video" height="85%" controls muted loop>
+            <source src="Innsbruck-Schliersee.mp4">
+        </video>
+        <div style="top: 0; width: auto; background-color: transparent; display: grid;">
+            <a class="border" style="position: relative;" href="https://www.instagram.com/vinzenz_kruger/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="border" style="top: 30px; position: relative;" href="https://www.tiktok.com/@vinzenz_kruger">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="seite" style="display: flex; align-items: center; justify-content:space-around; height: 100vh;">
+        <img style="height: 60%;" src="Thilo Innsbruck.jpg">
+        <div style="width: auto; top: 0; display: grid; background-color: transparent; justify-content: center;">
+            <p style="text-align: center; font-size: 3.4vw; position: relative;">
+                <i class="fa-solid fa-phone"></i> +49 1573 9070908
+            </p>
+            <p style="text-align: center; font-size: 3.4vw; position: relative;">
+                <i class="fa-solid fa-envelope"></i> vinzenzkrueger@gmx.de
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
