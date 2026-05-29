@@ -5,12 +5,13 @@ const seiten = document.querySelectorAll(".seite");
 const icons = document.querySelectorAll(".menu");
 const body = document.querySelector("#body");
 const videos = document.querySelectorAll(".video");
+const lang = document.querySelectorAll(".lang");
 
 body.addEventListener("scroll", id_check);
 
-videos.forEach((vid, i) => {
-    vid.addEventListener("scroll", () => pause(this));
-})
+/*videos.forEach((vid, i) => {
+    vid.addEventListener("scroll", () => pause(vid));
+})*/
 
 btns.forEach((btn, i) => {
     btn.addEventListener("click", () => hidden(i));
@@ -51,8 +52,6 @@ function to_id(number){
     });
 };
 
-function pause(element){
-    if (!is_in_viewport(element)){
-        element.pause();
-    }
-};
+/*function pause(element){
+    element.pause();
+};*/

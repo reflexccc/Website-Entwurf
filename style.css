@@ -1,16 +1,18 @@
 /*FARBEN*/
+
+
 :root {
     --main-color:hsl(204, 100%, 4%);
-    --secondary-color: hwb(204 15% 43%);
-    --accent-1: hsl(187, 43%, 84%);
-    --accent-2: hsl(24, 53%, 52%);
+    --secondary-color: hwb(0 15% 43%);
+    --accent-1: hsl(0, 0%, 80%);
+    --accent-2: hsl(0, 0%, 100%);
 }
 
 header{         
     width: 100vw;
     height: 13%;
     background-color: var(--accent-1);
-    z-index: 1;
+    z-index: 2;
 
     gap: 0;
 
@@ -55,13 +57,12 @@ button{
 
     background-color: var(--main-color);
     color: var(--accent-1);
-    border-width: 4px;
+    border: 4px solid var(--accent-1);
     border-radius: 15px;
-    border-color: var(--accent-1);
-    border-style: solid;
 
     background-size: cover;
     aspect-ratio: 1;
+    font-size: 5vh;
 }
 button:hover{
     border-color: var(--accent-2);
@@ -69,11 +70,6 @@ button:hover{
 }
 button.menu:hover{
     border-color: var(--secondary-color);
-}
-.dark{
-    background-color: hsla(0, 0%, 0%, 0.8) !important;
-    background-blend-mode: darken;
-    border-color: var(--accent-2);
 }
 /*TEXT*/
 p{
@@ -100,7 +96,7 @@ body{
 }
 
 div{
-    top: 12%;
+    top: 13%;
     position: relative;
     background-color: var(--main-color);
     width: 100%;
@@ -113,6 +109,8 @@ img{
     border-radius: 5px;
     aspect-ratio: 1;
     object-fit: cover;
+
+    box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
 }
 h1{
     display: flex;
@@ -126,7 +124,7 @@ h1{
     color: var(--secondary-color);
 }
 h2{
-    color: var(--main-color);
+    color:hsl(0, 0%, 100%);
 
     font-size: 22;
     font-weight: 800;
@@ -164,13 +162,95 @@ h2{
     color: transparent;
 }
 
+.blur{
+    backdrop-filter: blur(8px);
+}
+
+.flip_chart{
+    border-radius: 20px;
+
+    background-color: hsla(0, 0%, 0%, 0.35);
+    background-blend-mode: darken;
+    border-color: var(--accent-2);
+
+    overflow: hidden;
+
+    align-items: flex-end;
+    box-shadow: 0 -4px 30px rgba(255, 255, 255, 0.2);
+}
+
+.dark{
+    background-color: hsla(0, 0%, 0%, 0.85) !important;
+    background-blend-mode: darken;
+
+    backdrop-filter: blur(10px);
+
+    border-color: var(--accent-2);
+}
+
+.text{
+    font-size: 3vh;
+    width: 100%;
+    height: 100%;
+}
+
+.lang{
+    height: 60%;
+    aspect-ratio: 1;
+    margin-right: 2vw;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color);
+    color: var(--accent-1);
+    border: 4px solid var(--accent-1);
+
+    padding: 0;
+}
+
+.lang:hover{
+    border: 4px solid var(--secondary-color) !important;
+    animation: 0.20s bigger forwards ease-in-out;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: 0;
+}
+
+.overlay{
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: 100%;
+
+    background: hsla(0, 0%, 0%, 0.67);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.seite{
+    scroll-snap-align: end;
+}
+
+
 /*ANIMATIONEN*/
 @keyframes bigger {
     0% {scale: 1.00;}
     100% {scale: 1.07;}
 }
 
-.text{
-    font-size: 3vh;
-    max-width: 85%;
-}
